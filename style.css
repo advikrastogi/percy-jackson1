@@ -1,0 +1,239 @@
+
+body{
+    background:linear-gradient(50deg,rgba(105, 255, 235, 0.651), rgba(124, 196, 255, 0.678))
+}
+.final__shadow-typo {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        font-size: 1.6em;
+        color: #1A5276 ;
+        text-shadow: 3px 3px 0px #e7eef1, 8px 8px 0px rgba(0, 0, 0, 0);
+}
+.final__threede-typo {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #f2395a;
+    -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+            transform: skew(-5deg, -5deg) rotate(5deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    text-shadow: 1px 1px #d10e31,
+                 2px 2px #d10e31,
+                 3px 3px #d10e31,
+                 4px 4px #d10e31,
+                 5px 5px #d10e31,
+                 6px 6px #d10e31,
+                 7px 7px #d10e31,
+                 8px 8px #890920,
+                 9px 9px #890920,
+                 10px 10px #890920,
+                 11px 11px 15px rgba(0,0,0,0.5);
+}
+      .navbar {
+        overflow: hidden;
+        background-color: rgb(3,3,3);
+        font-family: Arial;
+      }
+      
+      /* Links inside the navbar */
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* The dropdown container */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      /* Dropdown button */
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+      
+      /* Add a red background color to navbar links on hover */
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+      
+      /* Dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      /* Add a grey background color to dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .final__depth-gallery{
+        position: relative;
+        display: inline-block;
+      }
+   
+      .final__depth-gallery img{
+        border: 7px solid gold;
+        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: filter 0.3s linear, transform 0.3s linear;
+        -webkit-transition: filter 0.3s linear, transform 0.3s linear;
+      }
+   
+      .final__depth-gallery:hover img{
+        filter: blur(5px);
+        transform: scale(0.9);
+      }
+   
+      .final__depth-gallery img:hover{
+        filter: blur(0);
+        transform: scale(1.1);
+      }
+      .final__layers {
+        position: relative;
+        min-height: 638px;
+        max-width: 360px;
+      }
+      
+      .final__layers img {
+        position: absolute;
+        max-width: 100%;
+        height: 100%;
+        transition: all ease 1600ms;
+        transform-style: preserve-3d;
+      }
+      
+      .final__layers:hover img {
+        /*
+        The "perspective" CSS function (or property) enables 3D space and produces the illustion of "distance" between the Z plane and the user.
+      
+        Smaller value = exaggerated effect
+        Larger value = subtle effect
+        */
+        transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(180px);
+      }
+      
+      .final__layers img.mid {
+        width: 320px;
+        left: 20px;
+      }
+      
+      .final__layers img.top {
+        width: 300px;
+        left: 30px;
+        top: -5px;
+      }
+      
+      .final__layers img.tippy {
+        width: 280px;
+        top: -150px;
+        left: 40px;
+      }
+      
+      .final__layers:hover img.mid {
+        transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(240px);
+      }
+      
+      .final__layers:hover img.top {
+        transform: perspective(1200px) rotateX(50deg) rotateY(20deg) rotateZ(-25deg) translateX(35px) translateY(0px) translateZ(280px);
+      }
+      
+      .final__layers:hover img.tippy {
+        transform: perspective(1200px) rotateX(60deg) rotateY(20deg) rotateZ(-25deg) translateX(-20px) translateY(20px) translateZ(260px);
+      }
+      
+      .final__accordion {
+        position: relative;
+        display: block;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+      }
+  
+      .final__accordion .accordion__item {
+        display: block;
+      }
+  
+      .final__accordion .accordion__content {
+        display: block;
+        padding: 0;
+        overflow: hidden;
+        height: 0;
+        -webkit-transition: height 0.5s ease, padding 0.3s linear;
+        transition: height 0.5s ease, padding 0.3s linear;
+      }
+  
+      .final__accordion .accordion__content p {
+        padding: 20px;
+        margin:0;
+      }
+  
+      .final__accordion .accordion__content:target {
+        height: 150px;
+      }
+  
+      .final__accordion .accordion__trigger {
+        text-decoration: none;
+      }
+  
+      .final__accordion .accordion__title {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 10px;
+        font-size: 1em;
+        background-color: #00B3B4;
+        color: #FFFFFF;
+        border: 1px solid #379AA4;
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+        -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+        cursor: pointer;
+      }
+  
+      .final__accordion .accordion__title:hover {
+        background-color: #0bbfc0;
+      }
+  
+      .final__accordion .accordion__title:after {
+        position: absolute;
+        top: calc(50% - 5px);
+        right: 20px;
+        width: 7px;
+        height: 7px;
+        border-left: 2px solid #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        content: "";
+      }

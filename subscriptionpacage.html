@@ -1,0 +1,369 @@
+<style>
+body{
+    background:linear-gradient(50deg,rgba(105, 255, 235, 0.651), rgba(124, 196, 255, 0.678))
+}
+.navbar {
+        overflow: hidden;
+        background-color: rgb(3,3,3);
+        font-family: Arial;
+      }
+      
+      /* Links inside the navbar */
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* The dropdown container */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      /* Dropdown button */
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+      
+      /* Add a red background color to navbar links on hover */
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+      
+      /* Dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      /* Add a grey background color to dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .final__threede-typo {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #f2395a;
+    -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+            transform: skew(-5deg, -5deg) rotate(5deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    text-shadow: 1px 1px #d10e31,
+                 2px 2px #d10e31,
+                 3px 3px #d10e31,
+                 4px 4px #d10e31,
+                 5px 5px #d10e31,
+                 6px 6px #d10e31,
+                 7px 7px #d10e31,
+                 8px 8px #890920,
+                 9px 9px #890920,
+                 10px 10px #890920,
+                 11px 11px 15px rgba(0,0,0,0.5);
+}
+.final__pricing-table {
+     margin: 60px auto;
+   }
+   .final__pricing-table:after {
+     display: table;
+     content: "";
+     clear: both;
+   }
+   .final__pricing-table > div {
+     display: block;
+     float: left;
+     width: 48%;
+     min-height: 1px;
+     background-color: #ffffff;
+     color: #555555;
+   }
+   .final__pricing-table > div:not(:last-child) {
+     margin-right: 2%;
+   }
+   .final__pricing-block {
+     text-align: center;
+     border-radius: 5px;
+     overflow: hidden;
+   }
+   .final__pricing-header {
+     height: auto;
+     padding: 30px 20px 40px;
+     text-transform: uppercase;
+   }
+   .final__pricing-header .final__pricing-heading {
+     font-size: 1.4rem;
+     font-weight: 700;
+   }
+   .final__pricing-price {
+     color: #777777;
+   }
+   .final__pricing-price > span {
+     display: inline-block;
+   }
+   .final__pricing-price__currency {
+     margin-top: 10px;
+     vertical-align: top;
+     font-size: 2rem;
+     font-weight: 700;
+     line-height: 1;
+     opacity: 0.6;
+   }
+   .final__pricing-price__value {
+     font-size: 5rem;
+     font-weight: 300;
+     line-height: 1;
+   }
+   .final__pricing-price__duration {
+     margin-top: 10px;
+     vertical-align: top;
+     font-size: 1.4rem;
+     line-height: 1;
+     opacity: 0.6;
+   }
+   .final__pricing-body ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+   }
+   .final__pricing-body ul li {
+     display: block;
+     padding: 10px 20px;
+     margin:0;
+   }
+   .final__pricing-body ul li:nth-child(2n) {
+     background-color: #ffffff;
+   }
+   .final__pricing-body ul li:nth-child(2n+1) {
+     background-color: #f8f8f8;
+   }
+   .final__pricing-footer {
+     padding: 40px 0 0;
+   }
+   .final__pricing-button,
+   .final__pricing-button:link,
+   .final__pricing-button:visited {
+     display: block;
+     padding: 20px;
+     text-decoration: none;
+     text-transform: uppercase;
+     background-color: #333333;
+     color: #ffffff;
+     border-bottom: dotted 0 #00B3B4;
+   }
+   .final__pricing-popular {
+     margin-top: -20px;
+   }
+   .final__pricing-popular .final__pricing-header {
+     padding-top: 50px;
+   }
+   .final__pricing-popular .final__pricing-footer {
+     padding-top: 60px;
+   }
+   .final__pricing-popular .final__pricing-price {
+     color: #ff8888;
+   }
+   .final__pricing-popular .final__pricing-button {
+     background-color: #2b9ce7;
+     color:#ffffff;
+   }
+   .final__pricing-popular .final__pricing-button:hover {
+     color: #2b9ce7;
+     background-color:#333333;
+   }
+
+   @media screen and (max-width:1023px) {
+     .final__pricing-table {
+       margin: auto;
+     }
+     .final__pricing-table > div {
+       float: none;
+       width: 100%;
+     }
+     .final__pricing-table > div:not(:last-child) {
+       margin-right: 0;
+       margin-bottom: 20px;
+     }
+     .final__pricing-body{
+        max-width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+     }
+     .final__pricing-body ul li{
+       display: inline-block;
+       vertical-align: middle;
+     }
+     .final__pricing-body ul li:not(:first-child){
+       margin-left: -5px;
+     }
+     .final__pricing-body ul li:nth-child(2n) {
+       background-color: #e8e8e8;
+     }
+     .final__pricing-footer {
+       padding-top: 0;
+     }
+     .final__pricing-popular {
+       margin-top: 0;
+     }
+     .final__pricing-popular .final__pricing-header,
+     .final__pricing-popular .final__pricing-footer {
+       padding-top: 30px;
+     }
+   }
+   .final__shadow-typo {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        font-size: 1.6em;
+        color: #1A5276 ;
+        text-shadow: 3px 3px 0px #e7eef1, 8px 8px 0px rgba(0, 0, 0, 0);
+   }
+</style>
+<html>
+<head>
+    <link rel = "icon" href =
+"https://ih1.redbubble.net/image.1318044581.4841/raf,750x1000,075,t,000000:44f0b734a5.jpg" type = "image/x-icon">
+    <title>
+        Subscription Pakages
+    </title>
+    <div class="navbar">
+        <a href="PercyJackson.html">Home</a>
+        <a href="subscriptionpacage.html">Subscription Pakages</a>
+        <a href="gallery.html">Gallery</a>
+        <div class="dropdown">
+          <button class="dropbtn">Percy Jackson Books Series
+            <i class="fa fa-caret-down"></i>
+          </button>`
+          <div class="dropdown-content">
+            <a href="avtaarsingh.html">Lightning Thief</a>
+            <a href="himanisingh.html">Sea of Monsters</a>
+            <a href="rohansingh.html">Titans Curse</a>
+            <a href="dollysingh.html">Battle Of The Labyrinth</a>
+            <a href="sunnysingh.html">The Last Olympian </a>
+          </div>
+        </div>
+      
+            <div class="dropdown">
+              <button class="dropbtn">Heroes Of Olympus Books Series
+                <i class="fa fa-caret-down"></i>
+              </button>`
+              <div class="dropdown-content">
+                <a href="avtaarsingh.html">The lost Hero</a>
+                <a href="himanisingh.html">The Son of Neptune</a>
+                <a href="rohansingh.html">The Mark Of The Athena</a>
+                <a href="dollysingh.html">The House Of Hades</a>
+                <a href="sunnysingh.html">The Blood Of Olympus</a>
+                </div>
+            </div>
+          </div>
+          
+
+</head>
+<body>
+
+    <div class="final-result">
+        <div class="content">
+
+          <section>
+            <h4 class="final__threede-typo" align="center">Subscription Packages</h4>
+          </section>
+
+          <section>
+            <h4  class="final__shadow-typo" >Want to buy some Percy Jackson related stuff?? Buy our best Subscription Packages bellow</h4>
+                          </section>
+        </div>
+    </div>
+  
+    <div class="final-result">
+        <div class="content">
+
+          <section>
+
+
+
+            <div class="final__pricing-table">
+              <div class="final__pricing-block">
+                <div class="final__pricing-header">
+                  <div class="final__pricing-heading">Basic Pack</div>
+                  <div class="final__pricing-price">
+                    <span class="final__pricing-price__currency">$</span>
+                    <span class="final__pricing-price__value">170</span>
+                    <span class="final__pricing-price__duration">/yr</span>
+                  </div>
+                </div>
+                <div class="final__pricing-body">
+                  <ul class="final__pricing-features">
+                    <li><strong>2</strong> T-Shirts</li>
+                    <li><strong>1 </strong> action figure</li>
+                    <li><strong>1</strong> Pin</li>
+                    <li><strong>1</strong> Painting</li>
+                    <li><strong>1</strong> Book Cover</li>
+                  </ul>
+                </div>
+                <div class="final__pricing-footer">
+                  <a href="#" class="final__pricing-button">Select</a>
+                </div>
+              </div>
+              <div class="final__pricing-block final__pricing-popular">
+                <div class="final__pricing-header">
+                 <div class="final__pricing-heading">Percyfing Package</div>
+                  <div class="final__pricing-price">
+                    <span class="final__pricing-price__currency">$</span>
+                    <span class="final__pricing-price__value">190</span>
+                    <span class="final__pricing-price__duration">/yr</span>
+                  </div>
+                </div>
+                <div class="final__pricing-body">
+                  <ul class="final__pricing-features">
+                    <li><strong>4</strong> Premium Quality T-shirts</li>
+                    <li><strong>3</strong> action figures</li>
+                    <li><strong>2</strong> Pins</li>
+                    <li><strong>2</strong> Paintings</li>
+                    <li><strong>3</strong> Book Covers</li>
+                    <li><strong>1</strong> Exclusive Trading Card Set</li>
+                    <li><strong>1</strong> Replica of a item in a book</li>
+                  </ul>
+                </div>
+                <div class="final__pricing-footer">
+                  <a href="#" class="final__pricing-button">Select</a>
+                </div>
+              </div>
+             </div>
+
+          </section>
+
+        </div>
+    </div>
+        </body>
+
+
+</html>

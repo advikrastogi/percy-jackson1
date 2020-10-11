@@ -1,0 +1,221 @@
+<style>
+body{
+    background:linear-gradient(35deg,rgb(105, 255, 235), rgb(132, 200, 255))
+}
+.final__threede-typo {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #f2395a;
+    -webkit-transform: skew(-5deg, -5deg) rotate(5deg);
+            transform: skew(-5deg, -5deg) rotate(5deg);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    text-shadow: 1px 1px #d10e31,
+                 2px 2px #d10e31,
+                 3px 3px #d10e31,
+                 4px 4px #d10e31,
+                 5px 5px #d10e31,
+                 6px 6px #d10e31,
+                 7px 7px #d10e31,
+                 8px 8px #890920,
+                 9px 9px #890920,
+                 10px 10px #890920,
+                 11px 11px 15px rgba(0,0,0,0.5);
+  }
+  .final__animation-bar-1 {
+        position: relative;
+        display: block;
+        padding: 5px;
+        font-size: 16px;
+        line-height: 16px;
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+      }
+      .final__animation-bar-1 span {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        height: 20px;
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
+        background-color: #f56982;
+        background-size: 100%;
+        background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
+        animation: progress-anim-1 10s infinite linear;
+      }
+      .final__animation-bar-1 span:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-size: 100%;
+        background-image: linear-gradient(45deg, #ffffff 25%,
+                                         rgba(0, 0, 0, 0) 25%,
+                                         rgba(0, 0, 0, 0) 50%,
+                                         #ffffff 50%,
+                                         #ffffff 75%,
+                                         rgba(0, 0, 0, 0) 75%,
+                                         rgba(0, 0, 0, 0));
+        background-size: 30px 30px;
+        opacity: 0.3;
+        animation: progress-anim-1-after 0.5s infinite linear;
+      }
+   
+   
+      @-webkit-keyframes progress-anim-1 {
+        0% {
+          width: 20%;
+        }
+        50% {
+          width: 80%;
+        }
+        100% {
+          width: 20%;
+        }
+      }
+      @keyframes progress-anim-1 {
+        0% {
+          width: 20%;
+        }
+        50% {
+          width: 80%;
+        }
+        100% {
+          width: 20%;
+        }
+      }
+      @-webkit-keyframes progress-anim-1-after {
+        0% {
+          background-position: 0 100%;
+        }
+        100% {
+          background-position: 30px 100%;
+        }
+      }
+      @keyframes progress-anim-1-after {
+        0% {
+          background-position: 0 100%;
+        }
+        100% {
+          background-position: 30px 100%;
+        }
+      }
+      button {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 15px 0 0;
+}
+.final__btn-3d-1 {
+  position: relative;
+  background: orangered;
+  border: none;
+  color: white;
+  padding: 15px 24px;
+  font-size: 1.4rem;
+  box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+  outline: none;
+}
+
+  .final__btn-3d-1:hover {
+    background: hsl(16, 100%, 45%);
+  }
+
+  .final__btn-3d-1:active {
+    background: hsl(16, 100%, 40%);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+  }
+
+  .final__btn-3d-1::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    /* border width needs to be size of the element's box shadow */
+    border: solid 6px transparent;
+
+    /* border width needs to be size of the element's box shadow */
+    border-right: solid 6px hsl(16, 100%, 30%);
+
+    /* no width for left, makes measurements easier */
+    border-left-width: 0px;
+
+    background: none;
+    top: 0px;
+
+    /* needs to be the same size as border width */
+    left: -6px;
+  }
+
+  .final__btn-3d-1::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: solid 6px transparent;
+    border-top: solid 6px hsl(16, 100%, 30%);
+    border-bottom-width: 0px;
+    background: none;
+    right: 0;
+    bottom: -6px;
+  }
+
+    .final__btn-3d-1:active::before {
+      border: solid 3px transparent;
+      border-right: solid 3px hsl(16, 100%, 30%);
+      border-left-width: 0px;
+      left: -3px;
+    }
+
+    .final__btn-3d-1:active::after {
+      border: solid 3px transparent;
+      border-top: solid 3px hsl(16, 100%, 30%);
+      border-bottom-width: 0px;
+      bottom: -3px;
+    }
+
+</style>
+<html>
+    <head>
+        <link rel = "icon" href =
+        "https://ih1.redbubble.net/image.1318044581.4841/raf,750x1000,075,t,000000:44f0b734a5.jpg"
+                type = "image/x-icon">
+                <title>
+                    Percy Jackson & The Olympians
+                </title>
+    </head>
+    <body>
+        <section>
+            <h4 class="final__threede-typo" align="center">Percy Jackson & The Olympians</h4>
+          </section>
+          
+<br>
+<br>
+<br>
+<br>
+           <h3 align="center">Loading Please Wait......</h3>
+<br>
+<br>
+<br>
+<br>
+            <section>
+            <div class=" final__animation-bar-1">
+              <span style="width:3%"></span>
+            </div>
+  
+          </section>
+          <br>
+<br>
+<br>
+<br>
+
+<a href="PercyJackson.html"<button type="button" name="button" class="final__btn-3d-1">Skip Loading </button> </a>
+    </body>
+</html>
